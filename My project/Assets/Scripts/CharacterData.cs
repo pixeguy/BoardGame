@@ -8,20 +8,20 @@ public class CharacterData
     public Character basechar { get; private set; }
     public int level { get; private set; }
 
-    public int currentHP { get; private set; }
+    public string name;
+    public int currentHP;
+    public int currentSpeed;
     
     //public list of moves will be added in once moves is created/////////
 
     public CharacterData(Character basecharacter, int levelnum)
     {
         basechar = basecharacter;
+        name = basecharacter.name;
         level = levelnum;
-        currentHP = GetMaxHP();
+        currentHP = basechar.hp + (level * 2);
+        currentSpeed = basechar.speed + (level); 
     }
 
-   public int GetMaxHP()
-    {
-        return basechar.hp + (level * 2);
-    }
 }
 

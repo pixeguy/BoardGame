@@ -7,4 +7,5 @@ public class Character : ScriptableObject
     public int hp;
     public int atk;
     public int def;
+    public int speed;
 }

@@ -5,7 +5,6 @@ public class BattleCharacter : MonoBehaviour
 {
 
     public CharacterData CharacterData {  get; private set; }
-    public float speed = 1;
     public void setup(CharacterData characterData)
     {
         CharacterData = characterData;
